@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <script src="{{ url_for('static', path='/script.js') }}"></script>
+</head>
+<body>
+
+<div class="page">
+    <h1>WebSocket Chat</h1>
+  <div class="form">
+    <form action="" onsubmit="return sendMessage(event)" class="login-form">
+      <input type="text" placeholder="Enter your message" id="messageText" autocomplete="off"/>
+      <button>Send message</button>
+    </form>
+  </div>
+
+</div>
+
+ <ul id='messages' class="first">
+        </ul>
+
+
+</body>
+</html>
